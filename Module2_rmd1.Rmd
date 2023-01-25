@@ -1,0 +1,99 @@
+---
+title: "Module2 - R Markdown Document 1"
+author: "Jeffrey Appiah"
+date: "2023-01-25"
+output:
+  word_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# This is a level 1 header
+
+## R Markdown
+
+### This is level 3 header
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+Here is a link to [Google](http://google.com)
+
+Here is a word in **bold** and another word in __bold__
+
+Here is a word in *italics* and another word in _italics_
+
+When we compile a document, we are using a  `rmarkdown` package
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+
+
+Here is an example of a non-numbered list:
+
+* Breakfast
+    - food
+        + eggs
+        + toast
+        + bacon
+        
+* Lunch
+    - taco
+    
+* Dinner
+    - baked chicken
+    - broccoli
+    - rice
+
+Here is an example of a numbered list 
+
+1. Breakfast
+    a. food
+        i. eggs
+        ii. toast
+        iii. bacon
+        
+2. Lunch
+    a. taco
+    
+3. Dinner
+    a. baked chicken
+    b. broccoli
+    c. rice
+    
+Here is an example of block quote: (leave 4 spaces)
+
+> This is a block quote. This   
+> paragraph has two line
+>
+> 1. This is a list inside a block quote
+> 2. Second item.
+
+Here is an example of a nested block quote:
+
+> This is a block quote. This   
+> paragraph has two lines 
+>
+> > This text is nested
+
+Here is an example of code in blockquote:
+
+>     2+2
+>     mean(c(1,2,3,4,5))
+
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
